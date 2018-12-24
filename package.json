@@ -1,6 +1,6 @@
 {
   "name": "done-rainbow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsonchou/doneRainbow.git"
+    "url": "git+https://github.com/jsonchou/done-rainbow.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jsonchou/doneRainbow/issues"
+    "url": "https://github.com/jsonchou/done-rainbow/issues"
   },
-  "homepage": "https://github.com/jsonchou/doneRainbow#readme",
+  "homepage": "https://github.com/jsonchou/done-rainbow#readme",
   "dependencies": {
     "chalk": "^2.4.1"
   }
