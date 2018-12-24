@@ -1,7 +1,9 @@
+// form https://github.com/chalk/chalk/blob/master/examples/rainbow.js
+
 const chalk = require('chalk')
 const ignoreChars = /[^!-~]/;
 
-module.exports = async function (str) {
+module.exports = async function (str, sleep = 2) {
     function rainbow(str, offset) {
         if (!str || str.length === 0) {
             return str;
@@ -28,7 +30,7 @@ module.exports = async function (str) {
         console.log();
         for (let i = 0; i < 360 * 5; i++) {
             console.log('\u001B[1F\u001B[G ', rainbow(str, i));
-            await sleep(2); // eslint-disable-line no-await-in-loop
+            await sleep(sleep); // eslint-disable-line no-await-in-loop
         }
     }
 
