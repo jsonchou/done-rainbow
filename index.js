@@ -3,7 +3,7 @@
 const chalk = require('chalk')
 const ignoreChars = /[^!-~]/;
 
-module.exports = async function (str, sleep = 2) {
+module.exports = async function (str, wait = 2) {
     function rainbow(str, offset) {
         if (!str || str.length === 0) {
             return str;
@@ -30,7 +30,7 @@ module.exports = async function (str, sleep = 2) {
         console.log();
         for (let i = 0; i < 360 * 5; i++) {
             console.log('\u001B[1F\u001B[G ', rainbow(str, i));
-            await sleep(sleep); // eslint-disable-line no-await-in-loop
+            await sleep(wait); 
         }
     }
 
