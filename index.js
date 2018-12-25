@@ -1,4 +1,4 @@
-// form https://github.com/chalk/chalk/blob/master/examples/rainbow.js
+// from https://github.com/chalk/chalk/blob/master/examples/rainbow.js
 
 const chalk = require('chalk')
 const ignoreChars = /[^!-~]/;
